@@ -333,6 +333,7 @@ img{
     text-align: center;
     padding: 2rem;
     color: #073668;
+    transition: .5s;
 }
 
 .face-1 h2{
@@ -350,8 +351,39 @@ img{
     padding: .5rem 1rem;
     text-decoration: none;
     color: #073668;
-    border: .2rem solid #073668;
+    border: 2px solid #073668;
     text-transform: uppercase;
     font-weight: bold;
     transition: .3s;
+}
+
+.face-2{
+    background-color: #073668;
+    transition: .5s;
+}
+
+.face-2 h2{ 
+    font-size: 12rem;
+    color: #fff;
+    transition: .5s;
+}
+
+.card:hover .face-2{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5rem;
+    left: 35%;
+    background-color: #fff;
+    border: 1px solid #073668;
+}
+
+.card:hover .face-2 h2{
+    font-size: 3rem;
+    color: #073668;
+}
+
+a:hover{
+    background-color: #073668;
+    color: #fff;
 }
