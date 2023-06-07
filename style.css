@@ -421,7 +421,7 @@ a:hover{
 } */
 
 
-a{
+/* a{
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -460,4 +460,52 @@ a:hover{
 a:active{
     transform: translateY(-2px);
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+} */
+
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(61, 61, 240, 0.8);
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+a::before{
+    content: "THAPA ENVELOP";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7a004b;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+    transform-origin: top;
+    transform: rotateX(270deg);
+}
+
+a:hover::before{
+    transform: rotateX(0deg);
+}
+a::after{
+    content: "THAPA ENVELOP";
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #026d40;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+    transform-origin: bottom;
+    transform: rotateX(-270deg);
+    transition-delay: .4s;
+}
+
+a:hover::after{
+    transform: rotateX(0deg);
 }
